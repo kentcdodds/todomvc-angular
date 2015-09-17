@@ -1,16 +1,19 @@
 {
   "private": true,
   "scripts": {
-    "test": "karma start test/config/karma.conf.js"
+    "start": "http-server .",
+    "test:watch": "karma start",
+    "test": "karma start --single-run"
   },
   "dependencies": {
-    "angular": "^1.4.5",
-    "todomvc-common": "^1.0.0",
+    "angular": "1.4.6",
+    "angular-route": "1.4.6",
     "todomvc-app-css": "^1.0.1",
-    "angular-route": "^1.4.5"
+    "todomvc-common": "^1.0.0"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.5",
+    "angular-mocks": "1.4.6",
+    "http-server": "0.8.0",
     "jasmine-core": "2.3.4",
     "karma": "^0.13.9",
     "karma-firefox-launcher": "0.1.6",
